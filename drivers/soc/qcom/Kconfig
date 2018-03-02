@@ -834,7 +834,12 @@ config QMP_DEBUGFS_CLIENT
 config SERIAL_NUM
 	bool "Enable Serial Number Proc Interface"
 	help
-	Provide a interface for reading CPU serial number.
+	  Provide a interface for reading CPU serial number.
+
+config CPUMAXFREQ
+	bool "Enable CPUMAXFREQ Proc Interface"
+	help
+	  Provide a interface for getting the maximum frequency supported by cpu core.
 
 source "drivers/soc/qcom/memshare/Kconfig"
 
