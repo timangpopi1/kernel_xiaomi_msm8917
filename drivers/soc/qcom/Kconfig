@@ -841,6 +841,12 @@ config CPUMAXFREQ
 	help
 	  Provide a interface for getting the maximum frequency supported by cpu core.
 
+config SECBOOT_FUSE
+	bool "Enable Secure boot fuse Proc Interface"
+	help
+	  Provide a interface for reading CPU secure boot fuse setting. Interface located in
+	  /proc/secboot_fuse_reg
+
 source "drivers/soc/qcom/memshare/Kconfig"
 
 config MSM_REMOTEQDSS
