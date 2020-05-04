@@ -1001,7 +1001,7 @@ static int ft5x06_fw_upgrade_start(struct i2c_client *client,
 	/* Enter upgrade mode */
 		w_buf[0] = FT_UPGRADE_55;
 		ft5x06_i2c_write(client, &w_buf[0], 1);
-		usleep(FT_55_AA_DLY_NS);
+		udelay(FT_55_AA_DLY_NS);
 		w_buf[0] = FT_UPGRADE_AA;
 		ft5x06_i2c_write(client, &w_buf[0], 1);
 		if (i_ret < 0) {
