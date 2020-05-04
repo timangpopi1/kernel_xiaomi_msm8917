@@ -58,8 +58,8 @@ obj-$(CONFIG_CXL_BASE)		+= cxl/
 obj-$(CONFIG_PANEL)             += panel.o
 obj-$(CONFIG_QPNP_MISC) 	+= qpnp-misc.o
 obj-$(CONFIG_FPR_FPC) 	+= fpr_FingerprintCard/
-obj-y	+= hardware_info.o
-
+obj-$(CONFIG_HARDWARE_INFO)	+= hardware_info.o
+obj-$(CONFIG_MEMORY_STATE_TIME)	+= memory_state_time.o
 lkdtm-$(CONFIG_LKDTM)		+= lkdtm_core.o
 lkdtm-$(CONFIG_LKDTM)		+= lkdtm_bugs.o
 lkdtm-$(CONFIG_LKDTM)		+= lkdtm_heap.o
